@@ -1951,11 +1951,11 @@ document.addEventListener(&#x27;click&#x27;, function() {
 	];
 
     // Edit Kata-kata di Sini
-const txtDoa = `Barakallah fii umrik Istriku Tercinta`;
-const txtPesanAkhir = `Hari ini adalah hari spesial`;
-const txtLucu = `Semoga hari ini penuh cinta dan kebahagiaan! 💖`;  
+const txtDoa = &quot;&lt;b style=&#x27;font-size:20px&#x27;&gt;Barakallah fii umrik Istriku Tercinta 🎂🥳&lt;/b&gt;&quot;
+const txtPesanAkhir = &quot;Hari ini adalah hari spesial, karena di hari inilah Allah menghadirkan kamu ke dunia, dan suatu saat mempertemukanmu denganku menjadi pendamping hidupku 🤍, Semoga di usia yang baru ini, kamu selalu diberikan kesehatan, kebahagiaan, dan keberkahan dalam setiap langkahmu. Semoga semua doa dan harapanmu satu per satu dimudahkan dan diwujudkan dengan cara terbaik oleh Allah ✨, Terima kasih sudah menjadi istri yang sabar, lembut, dan selalu ada dalam setiap perjalanan hidupku. Terima kasih juga sudah menjadi ibu terbaik untuk anak kita 👶 yang penuh kasih sayang dan kesabaran. Semoga rumah tangga kita selalu dipenuhi cinta, ketenangan, dan kebahagiaan sampai tua nanti 🤍🫶💫&quot;;
+ const txtLucu = &quot;&lt;b style=\'font-size:16.6px\'>── ᯓᡣ𐭩</b&gt;&lt;br&gt;Terakhir,&lt;br&gt;&lt;b&gt;Selamat Ulang Tahun Sayangku 🎉&lt;/b&gt;&amp;nbsp;And ...&lt;br&gt;&lt;b style=\'font-size:16.6px\'>Semoga hari ini penuh cinta dan kebahagiaan! 💖</b&gt;&quot;; 
 &lt;/script&gt;
-  &lt;script&gt;
+&lt;script&gt;
   	audio = new Audio(&#x27;&#x27; + linkmp3.src);
 
     // Elemen Background
@@ -2131,13 +2131,13 @@ const txtLucu = `Semoga hari ini penuh cinta dan kebahagiaan! 💖`;
       stiker4.style = &quot;transform:scale(1)&quot;;
 
       new TypeIt(&quot;#teksCinta&quot;, {
-        strings: [txtDoa],
+        strings: txtDoa,
         speed: 15,
         startDelay: 300,
         afterComplete: function () {
           document.querySelector(&quot;#teksCinta .ti-cursor&quot;).style.display = &quot;none&quot;;
           new TypeIt(&quot;#pesanAkhir&quot;, {
-            strings: [txtPesanAkhir],
+            strings: txtPesanAkhir,
             speed: 17,
             html: true,
             breakLines: false,
@@ -2145,7 +2145,7 @@ const txtLucu = `Semoga hari ini penuh cinta dan kebahagiaan! 💖`;
             afterComplete: function () {
               document.querySelector(&quot;#pesanAkhir .ti-cursor&quot;).style.display = &quot;none&quot;;
               new TypeIt(&quot;#teksLucu&quot;, {
-                strings: [txtLucu],
+                strings: txtLucu,
                 speed: 15,
                 waitUntilVisible: true,
                 afterComplete: function () {
