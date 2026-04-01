@@ -2131,13 +2131,13 @@ const txtLucu = `Semoga hari ini penuh cinta dan kebahagiaan! 💖`;
       stiker4.style = &quot;transform:scale(1)&quot;;
 
       new TypeIt(&quot;#teksCinta&quot;, {
-        strings: txtDoa,
+        strings: [txtDoa],
         speed: 15,
         startDelay: 300,
         afterComplete: function () {
           document.querySelector(&quot;#teksCinta .ti-cursor&quot;).style.display = &quot;none&quot;;
           new TypeIt(&quot;#pesanAkhir&quot;, {
-            strings: txtPesanAkhir,
+            strings: [txtPesanAkhir],
             speed: 17,
             html: true,
             breakLines: false,
@@ -2145,7 +2145,7 @@ const txtLucu = `Semoga hari ini penuh cinta dan kebahagiaan! 💖`;
             afterComplete: function () {
               document.querySelector(&quot;#pesanAkhir .ti-cursor&quot;).style.display = &quot;none&quot;;
               new TypeIt(&quot;#teksLucu&quot;, {
-                strings: txtLucu,
+                strings: [txtLucu],
                 speed: 15,
                 waitUntilVisible: true,
                 afterComplete: function () {
